@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: 'Source Sans Pro', sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="header-content">
+            <img src="logo1.png" alt="Logo" id="logo">
+            <h1 class="overskrift">USN-Start. En ny fremtid</h1>
+            <div class="search-bar">
+                <input type="text" id="searchInput" placeholder="Søk...">
+                <button onclick="handleSearch()">Search</button>
+            </div>
+            <div class="dropdown">
+                <button class="dropdown-button" onclick="toggleMenu()">Meny</button>
+                <div class="dropdown-menu" id="dropdownMenu">
+                    <ul>
+                        <li><a href="#" onclick="showMessage('Registrer deg')">Registrer deg</a></li>
+                        <li><a href="#" onclick="showMessage('Logg inn')">Logg inn</a></li>
+                      </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="navigation">
+        <a href="page1.html" class="button-link">Medlemskap</a>
+        <a href="page2.html" class="button-link">Fasiliteter og bruksmåter</a>
+        <a href="page3.html" class="button-link">Lokasjon og parkering</a>
+        <a href="page4.html" class="button-link">Privat informasjon</a>
+        <a href="page5.html" class="button-link">Bestilling og reservasjon</a>
+    </div>
+    <div class="everything">
+        <div class="about-section">
+            <div class="about-content">
+                <h2>Om dette prosjektet</h2>
+                <p>Velkommen til USNStart Coworking Space på Bø campus! Vi jobber med å transformere tre laboratorierom til et inspirerende fellesarbeidsområde som vil være åpent ved årets slutt.</p> 
+                <p>USNStart tilbyr åpne arbeidsområder, private kontorer, møterom, en lounge, kjøkken og spiseplass, spillrom, samt utskrifts- og skanningsområde. Vi ønsker å tiltrekke studenter som ønsker å jobbe og bli gründere, samt enkeltpersoner og selskaper som ønsker et fellesskap av like-minded individer. Besøk vår nettside for å lære mer om medlemskap, fasiliteter og muligheter for å booke arbeidsplasser. Bli en del av vårt voksende fellesskap og ta din arbeidsdag til et nytt nivå hos USNStart Coworking Space!</p>
+            </div>
+            <div class="contact-info">
+                <h2>Kontaktinformasjon</h2>
+                <p>Email: <a href="usnstart@coworking.com">usnstart@coworking.com</a></p>
+                <p>Telefon: <a href="tel:+47 94332270">+47 943 32 270</a></p>
+                <form id="contactForm" onsubmit="event.preventDefault(); alert('Dette er bare et utklipp og sender ikke e-post.');">
+                    <div class="form-field">
+                        <label for="name">Navn:</label>
+                        <input type="text" id="name" name="name" placeholder="Ditt navn" required>
+                    </div>
+                    <div class="form-field">
+                        <label for="email">E-post:</label>
+                        <input type="email" id="email" name="email" placeholder="din@epost.com" required>
+                    </div>
+                    <div class="form-field">
+                        <label for="message">Melding:</label>
+                        <textarea id="message" name="message" placeholder="Skriv din melding her..." required></textarea>
+                    </div>
+                    <button type="submit" id="sendButton">Send</button>
+                </form>
+            </div>
+    </div>
+    <div class="main-container">
+    <div class="slider-container">
+    <div class="image-slider" id="imageSlider">
+        <h2 class="overskrift-mindre">Bilde show av vår oppusset plass</h2>
+        <img src="bilde1.jpg" alt="Bilde 1" class="active">
+        <img src="bilde2.jpg" alt="Bilde 2" style="display:none;">
+        <img src="bilde3.jpg" alt="Bilde 3" style="display:none;">
+        <img src="bilde4.jpg" alt="Bilde 4" style="display:none;">
+        <img src="bilde5.jpg" alt="Bilde 5" style="display:none;">
+        <img src="bilde6.jpg" alt="Bilde 6" style="display:none;">
+        <img src="bilde7.jpg" alt="Bilde 7" style="display:none;">
+        <img src="bilde8.jpg" alt="Bilde 8" style="display:none;">
+        <img src="bilde9.jpg" alt="Bilde 9" style="display:none;">
+        <img src="bilde10.jpg" alt="Bilde 10" style="display:none;">
+    </div>
+    </div>
+        <section id="reviews">
+            <h2 class="Tilbakemeldinger">Tilbakemeldinger</h2>
+            <div class="feedback-container">
+                    <div class="feedback-blob">
+                        <img src="person1.jpeg">
+                        <div class="feedback-text1">USNStart Coworking Space har et fantastisk arbeidsmiljø og flotte fasiliteter. Jeg er inspirert hver dag jeg jobber her! - Jacob, Student</div>
+                    </div>
+                    <div class="feedback-blob">
+                        <img src="person2.jpeg">
+                        <div class="feedback-text4">Jeg elsker fleksibiliteten og atmosfæren på USNStart. Det er det perfekte stedet for å samarbeide med andre gründere og realisere mine ideer. - Maria, Grafisk designer</div>
+                    </div>
+                    <div class="feedback-blob1">
+                        <img src="person3.jpeg">
+                        <div class="feedback-text">USNStart har virkelig skapt et fellesskap av kreative og ambisiøse mennesker. Jeg har funnet samarbeidspartnere og venner her som har hjulpet meg med å vokse som entreprenør. - Markus, Entreprenør</div>
+                    </div>
+                    <div class="feedback-blob1">
+                        <img src="person6.jpeg">
+                        <div class="feedback-text">Som student har USNStart vært en uvurderlig ressurs for meg. Jeg får tilgang til et profesjonelt arbeidsmiljø og muligheten til å nettverke med erfarne fagfolk. - Thomas, Tidligere student</div>
+                    </div>
+                    <a href="page7.html" class="fancy-button">Se flere? trykk her!</a>
+                </div>
+            </div>
+        </div>
+        </section>
+        <script>
+            document.addEventListener("DOMContentLoaded", function() {
+              // Finn send-knappen og boksene ved hjelp av id-ene
+              const sendButton = document.getElementById("sendButton");
+              const nameInput = document.getElementById("name");
+              const emailInput = document.getElementById("email");
+              const messageTextarea = document.getElementById("message");
+            
+              // Legg til en klikk-lytter på send-knappen
+              sendButton.addEventListener("click", function() {
+                // Tøm innholdet i boksene
+                nameInput.value = "";
+                emailInput.value = "";
+                messageTextarea.value = "";
+            
+                // Du kan også legge til en bekreftelsesmelding hvis ønskelig
+                alert("Meldingen er sendt!");
+            
+                // Eventuell ekstra logikk for å behandle sendingen kan legges til her
+              });
+            });
+            </script>
+            <script>
+            document.addEventListener("DOMContentLoaded", function() {
+                let currentImageIndex = 0;
+                const images = document.querySelectorAll("#imageSlider img");
+                const totalImages = images.length;
+            
+                // Funksjon for å oppdatere bildet
+                function updateImage() {
+                    images.forEach((img, index) => {
+                        img.style.display = 'none'; // Gjemmer alle bildene
+                        img.classList.remove('active');
+                    });
+                    images[currentImageIndex].style.display = 'block'; // Viser det nåværende bildet
+                    images[currentImageIndex].classList.add('active');
+            
+                    currentImageIndex = (currentImageIndex + 1) % totalImages; // Går til neste bilde, eller tilbake til det første
+                }
+            
+                setInterval(updateImage, 5000); // Endrer bilde hvert 10. sekund
+                updateImage(); // Starter med det første bildet umiddelbart
+            });
+        </script>
+        <script>
+            function handleSearch() {
+    var searchInput = document.getElementById("searchInput");
+    var searchTerm = searchInput.value.trim();
+
+    if (searchTerm === "") {
+        alert("Vennligst skriv inn noe i søkefeltet før du søker.");
+    } else {
+        alert("Denne funksjonen er ikke enda tilgjengelig.");
+        searchInput.value = ""; // Tømmer søkefeltet hvis det er skrevet noe
+    }
+    
+}
+
+function showMenu() {
+  var dropdownMenu = document.getElementById("dropdownMenu");
+  dropdownMenu.classList.toggle("active");
+}
+
+function toggleMenu() {
+    var dropdownMenu = document.getElementById("dropdownMenu");
+    dropdownMenu.classList.toggle("active"); // Bytt mellom å vise og skjule menyen
+}
+
+// Legg til en klikk-lytter på dokumentet for å lukke menyen hvis brukeren klikker et annet sted
+document.addEventListener("click", function(event) {
+    var dropdownMenu = document.getElementById("dropdownMenu");
+    var dropdownButton = document.querySelector(".dropdown-button");
+    if (!dropdownButton.contains(event.target) && !dropdownMenu.contains(event.target)) {
+        dropdownMenu.classList.remove("active");
+    }
+});
+
+function showMessage(message) {
+    alert(message); // Vis melding
+}
+
+
+    </script>
+</body>
+</html>
+
+
